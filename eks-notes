@@ -1,0 +1,16 @@
+eksctl create cluster \
+    --name cluster-dev \
+    --region us-east-1 \
+    --nodes 2 \
+    --nodes-min 1 \
+    --nodes-max 3 \
+    --node-type t3.medium \
+    --managed
+
+eksctl get cluster --region us-east-1
+
+kubectl get svc
+
+aws eks --region us-east-1 update-kubeconfig --name cluster-dev
+
+kubectl get nodes
