@@ -14,3 +14,7 @@ kubectl get svc
 aws eks --region us-east-1 update-kubeconfig --name cluster-dev
 
 kubectl get nodes
+
+PR created
+
+
